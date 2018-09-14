@@ -1,12 +1,15 @@
-Main:	empires.o Civilizacion.o Jugador.o Edificio.o Casas.o Cuarteles.o Castillos.o Tropa.o Soldado.o Caballeria.o GuerrerosE.o
-	g++ empires.o Civilizacion.o Jugador.o Edificio.o Casas.o Cuarteles.o Castillos.o Tropa.o Soldado.o Caballeria.o GuerrerosE.o -o Main
+Main:	empires.o Civilizacion.o Aldeano.o Jugador.o Edificio.o Casas.o Cuarteles.o Castillos.o Tropa.o Soldado.o Caballeria.o GuerrerosE.o
+	g++ empires.o Civilizacion.o Aldeano.o Jugador.o Edificio.o Casas.o Cuarteles.o Castillos.o Tropa.o Soldado.o Caballeria.o GuerrerosE.o -o Main
 
 
 empires.o: empires.cpp Civilizacion.h Jugador.h Edificio.h Casas.h Cuarteles.h Castillos.h Tropa.h Soldado.h Caballeria.h GuerrerosE.h
 	g++ -c empires.cpp 
 
 Civilizacion.o: Civilizacion.cpp Civilizacion.h
-	g++ -c Civilizacion.cpp 
+	g++ -c Civilizacion.cpp
+
+Aldeano.o:	Aldeano.cpp Aldeano.h
+	g++ -c Aldeano.cpp
 
 Jugador.o: Jugador.cpp Jugador.h
 	g++ -c Jugador.cpp 
